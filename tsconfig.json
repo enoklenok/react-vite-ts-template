@@ -10,6 +10,7 @@
     "skipLibCheck": true,
     "moduleResolution": "node",
     "paths": {
+      "@core/*": ["./src/@core/*"],
       "@assets/*": ["./src/assets/*"],
       "@components/*": ["./src/components/*"],
       "@routes/*": ["./src/routes/*"],

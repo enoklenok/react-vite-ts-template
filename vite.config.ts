@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: [
+      { find: "@core", replacement: "/src/@core" },
       { find: "@assets", replacement: "/src/assets" },
       { find: "@components", replacement: "/src/components" },
       { find: "@routes", replacement: "/src/routes" },
@@ -13,5 +14,8 @@ export default defineConfig({
       { find: "@types", replacement: "/src/types" },
       { find: "@utils", replacement: "/src/utils" },
     ],
+  },
+  server: {
+    port: 3000,
   },
 });
